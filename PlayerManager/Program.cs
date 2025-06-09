@@ -22,19 +22,19 @@ namespace Pickleball_PlayerManager
             player1.Rating = 3.5;
 
             Player player2 = new Player();
-                player2.Name = "Anastasia";
-                player2.Age = 27;
-                player2.Rating = 3.5;
+            player2.Name = "Anastasia";
+            player2.Age = 27;
+            player2.Rating = 3.5;
 
             Player player3 = new Player();
-                player3.Name = "Alex";
-                player3.Age = 28;
-                player3.Rating = 3.0;
+            player3.Name = "Alex";
+            player3.Age = 28;
+            player3.Rating = 3.0;
 
             Player player4 = new Player();
-                player4.Name = "Tom";
-                player4.Age = 40;
-                player4.Rating = 3.0;
+            player4.Name = "Tom";
+            player4.Age = 40;
+            player4.Rating = 3.0;
 
 
             players.Add(player1);
@@ -47,7 +47,8 @@ namespace Pickleball_PlayerManager
             {
                 player.PrintInfo();
             }
-           
+
+            Match match = new Match();
 
         }   
     } 

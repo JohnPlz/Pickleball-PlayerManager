@@ -9,7 +9,8 @@ namespace Pickleball_PlayerManager
 
         public void PrintInfo()
         {
-            System.Console.WriteLine($"Name: {Name}, Age: {Age}, Rating: {Rating}");
+            System.Console.WriteLine(Name);
+            //System.Console.WriteLine($"Name: {Name}, Age: {Age}, Rating: {Rating}");
         }
     }
 }

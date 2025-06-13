@@ -6,23 +6,23 @@ namespace Pickleball_PlayerManager
         public string? Name { get; set; }
         public int Age { get; set; }
         public double Rating { get; set; }
-        public void InputInfoPlayer(int number)
+         public Player(string name, int age, double rating)
         {
-            System.Console.WriteLine($"\nEnter the players {number}: ");
-            Console.Write("name: ");
-            Name = Console.ReadLine();
-            Console.Write("age: ");
-            Age = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Rating: ");
-            Rating = Convert.ToDouble(Console.ReadLine());
+            Name = name;
+            Rating = rating;
+            Age = age;
         }
-        public void PrintInfo(int number)
+ 
+      
+         public string InputInfoPlayer()
         {
-
-            System.Console.WriteLine($" Player {number}:");
-            System.Console.WriteLine($" Name {Name}, Age: {Age}, Rating: {Rating}");
+            return $"Name {Name}, Age: {Age}, Rating: {Rating}";
         }
 
+        public string PrintInfo()
 
+        {
+                return $"Name {Name}, Age: {Age}, Rating: {Rating}"; 
+        }
     }
 }

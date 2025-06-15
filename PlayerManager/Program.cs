@@ -5,19 +5,17 @@ namespace Pickleball_PlayerManager
     public class Program
     {
         public static void Main(string[] args)
-        {   Console.Write("Enter the number of players: ");
-            int numberOfPlayers = Convert.ToInt32(Console.ReadLine());
-            Player[] players_array = new Player[numberOfPlayers];
-            for (int i = 0; i < numberOfPlayers; i++)
-            {
-                players_array[i] = new Player();
-                players_array[i].InputInfoPlayer(i+1);
-            }
-            System.Console.WriteLine("*************************");
-                for (int i = 0; i < numberOfPlayers; i++)
-                {
-                players_array[i].PrintInfo(i+1);
-            }
+        {
+
+            Player player1 = new Player("Anna", 50, 6);
+            Player player2 = new Player("Tom", 40, 4.5);
+
+            
+            Match match = new Match();
+            match.Player1 = player1;
+            match.Player2 = player2;
+            match.PlayMatch();
+            match.PrintResult();
         }   
     } 
 }
